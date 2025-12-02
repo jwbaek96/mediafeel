@@ -12,17 +12,20 @@ export async function renderAboutPage() {
                 <div class="page-header">
                     <h1 class="page-title">회사소개</h1>
                     <p class="page-subtitle">${companyData?.brandName || 'MEDIA FEEL'}</p>
+                    <button class="btn btn-outline" onclick="openAboutPdfModal()" style="margin-top: var(--spacing-md);">
+                        ${getIcon('download', 20)} 회사소개서 다운로드
+                    </button>
                 </div>
 
                 <!-- Vision & Mission -->
                 <section class="section">
                     <div class="vision-mission-grid">
                         <div class="card vm-card">
-                            <h2 class="card-title">비전</h2>
+                            <h2 class="card-title">VISION</h2>
                             <p class="vm-text">${companyData?.vision || ''}</p>
                         </div>
                         <div class="card vm-card">
-                            <h2 class="card-title">미션</h2>
+                            <h2 class="card-title">MISSION</h2>
                             <p class="vm-text">${companyData?.mission || ''}</p>
                         </div>
                     </div>
@@ -120,9 +123,42 @@ export async function renderAboutPage() {
                 </section>
             </div>
         </div>
+
+        <!-- PDF Download Modal -->
+        <div id="aboutPdfModal" class="modal" onclick="closeAboutPdfModal()">
+            <div class="modal-content" style="max-width: 500px;" onclick="event.stopPropagation()">
+                <button class="modal-close" onclick="closeAboutPdfModal()">&times;</button>
+                <div style="text-align: center; padding: var(--spacing-xl);">
+                    <div class="pdf-icon" style="margin: 0 auto var(--spacing-lg);">${getIcon('document', 48)}</div>
+                    <h2 style="margin-bottom: var(--spacing-md);">회사소개서 다운로드</h2>
+                    <p style="color: var(--color-text-secondary); margin-bottom: var(--spacing-xl);">
+                        미디어필의 비전, 핵심 기술, 주요 프로젝트를 담은 종합 소개서
+                    </p>
+                    <a href="assets/pdf/company-brochure.pdf" download class="btn btn-primary btn-large">
+                        ${getIcon('download', 24)} PDF 다운로드
+                    </a>
+                </div>
+            </div>
+        </div>
     `;
     
     render(html);
+
+    // PDF Modal functions
+    window.openAboutPdfModal = function() {
+        document.getElementById('aboutPdfModal').classList.add('active');
+        document.body.style.overflow = 'hidden';
+    };
+    
+    window.closeAboutPdfModal = function() {
+        document.getElementById('aboutPdfModal').classList.remove('active');
+        document.body.style.overflow = '';
+    };
+
+    // Auto-open modal on page load
+    setTimeout(() => {
+        window.openAboutPdfModal();
+    }, 500);
 }
 
 function getIconSVG(iconName) {
