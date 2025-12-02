@@ -1,0 +1,25 @@
+{
+  "company": {
+    "name": "(주)미디어즘",
+    "brandName": "MEDIA FEEL",
+    "address": "경기도 안양시 만안구 양화로37번길 34, 3동 4층 403호 (안양동, 연성대학교)",
+    "phone": "010-3287-8984",
+    "email": "media-ism@media-ism.com",
+    "ceo": "김신희"
+  },
+  "mapInfo": {
+    "latitude": 37.3945,
+    "longitude": 126.9564,
+    "address": "경기도 안양시 만안구 양화로37번길 34",
+    "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.234567890123!2d126.9564!3d37.3945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDIzJzQwLjIiTiAxMjbCsDU3JzIzLjAiRQ!5e0!3m2!1sko!2skr!4v1234567890"
+  },
+  "businessHours": {
+    "weekdays": "09:00 - 18:00",
+    "weekend": "휴무"
+  },
+  "social": {
+    "blog": "",
+    "youtube": "",
+    "instagram": ""
+  }
+}
