@@ -47,21 +47,27 @@ export async function renderCaseDetailPage(params) {
 
                 <!-- Case Gallery -->
                 <div class="case-gallery">
-                    <div class="gallery-main" style="background: linear-gradient(135deg, #00bfa5, #1a1a1a);">
-                        <div class="gallery-placeholder">
-                            ${getCategoryIcon(caseItem.category)}
-                            <p>이미지 준비 중</p>
+                    ${caseItem.images?.length > 0 ? `
+                        <div class="gallery-main" id="galleryMain">
+                            <img src="${caseItem.images[0]}" alt="${caseItem.title}" />
                         </div>
-                    </div>
-                    ${caseItem.images?.length > 1 ? `
-                        <div class="gallery-thumbnails">
-                            ${caseItem.images.map((img, index) => `
-                                <div class="gallery-thumb" style="background: linear-gradient(135deg, #00bfa5 ${index * 20}%, #1a1a1a);">
-                                    ${getCategoryIcon(caseItem.category)}
-                                </div>
-                            `).join('')}
+                        ${caseItem.images.length > 1 ? `
+                            <div class="gallery-thumbnails">
+                                ${caseItem.images.map((img, index) => `
+                                    <div class="gallery-thumb ${index === 0 ? 'active' : ''}" data-image="${img}" data-index="${index}">
+                                        <img src="${img}" alt="${caseItem.title} ${index + 1}" />
+                                    </div>
+                                `).join('')}
+                            </div>
+                        ` : ''}
+                    ` : `
+                        <div class="gallery-main" style="background: linear-gradient(135deg, #00bfa5, #1a1a1a);">
+                            <div class="gallery-placeholder">
+                                ${getCategoryIcon(caseItem.category)}
+                                <p>이미지 준비 중</p>
+                            </div>
                         </div>
-                    ` : ''}
+                    `}
                 </div>
 
                 <!-- Case Description -->
@@ -136,6 +142,26 @@ export async function renderCaseDetailPage(params) {
     `;
     
     render(html);
+    
+    // Gallery thumbnail click handler
+    if (caseItem.images?.length > 1) {
+        const galleryMain = document.getElementById('galleryMain');
+        const thumbnails = document.querySelectorAll('.gallery-thumb');
+        
+        thumbnails.forEach(thumb => {
+            thumb.addEventListener('click', () => {
+                const imageSrc = thumb.getAttribute('data-image');
+                const mainImg = galleryMain.querySelector('img');
+                
+                // Update main image
+                mainImg.src = imageSrc;
+                
+                // Update active state
+                thumbnails.forEach(t => t.classList.remove('active'));
+                thumb.classList.add('active');
+            });
+        });
+    }
 }
 
 function getCategoryIcon(category) {

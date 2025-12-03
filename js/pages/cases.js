@@ -106,10 +106,14 @@ export async function renderCasesPage() {
 function renderCaseCards(cases) {
     return cases.map(caseItem => `
         <div class="card case-card" onclick="window.location.hash='#/case/${caseItem.id}'">
-            <div class="case-thumbnail" style="background: linear-gradient(135deg, #00bfa5, #1a1a1a);">
-                <div class="case-thumbnail-placeholder">
-                    ${getCategoryIcon(caseItem.category)}
-                </div>
+            <div class="case-thumbnail">
+                ${caseItem.thumbnail ? `
+                    <img src="${caseItem.thumbnail}" alt="${caseItem.title}" />
+                ` : `
+                    <div class="case-thumbnail-placeholder" style="background: linear-gradient(135deg, #00bfa5, #1a1a1a);">
+                        ${getCategoryIcon(caseItem.category)}
+                    </div>
+                `}
             </div>
             <div class="case-card-content">
                 <div class="case-meta">

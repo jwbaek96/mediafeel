@@ -1,6 +1,34 @@
 {
   "cases": [
     {
+      "id": "case-015",
+      "title": "테스트 타이틀",
+      "category": "interactive",
+      "year": 2025,
+      "location": "서울 안전체험관",
+      "client": "서울시",
+      "description": "테스트 설명 글",
+      "thumbnail": "./assets/img/더미이미지 (1).JPG",
+      "images": [
+        "./assets/img/더미이미지 (1).JPG",
+        "./assets/img/더미이미지 (2).JPG",
+        "./assets/img/더미이미지 (3).JPG",
+        "./assets/img/더미이미지 (4).JPG"
+      ],
+      "details": {
+        "duration": "0개월",
+        "scope": "scope, scope",
+        "technology": "technology, technology",
+        "features": [
+          "feature 1",
+          "feature 2",
+          "feature 3",
+          "feature 4"
+        ]
+      },
+      "tags": ["tag1", "tag2", "tag3", "tag4"]
+    },
+    {
       "id": "case-001",
       "title": "2018 평창 동계올림픽 스노보드 체험 시뮬레이터",
       "category": "motion-simulator",
@@ -8,8 +36,13 @@
       "location": "평창올림픽 프라자, 강릉 ICT 홍보관, 인천공항 올림픽홍보관, 강원도청 패럴림픽홍보관",
       "client": "평창올림픽 조직위원회",
       "description": "4종목 8기의 스포츠 체험 시뮬레이터 전시. 4명이 동시 네트워크 접속하여 경주가 가능한 스노보드 체험 시뮬레이터. 플라자 구조상 진동 문제를 3번에 걸쳐 진동 패드 설치 공사로 해결했습니다.",
-      "thumbnail": "./assets/img/cases/case-001-thumb.jpg",
-      "images": [],
+      "thumbnail": "./assets/img/더미이미지 (1).JPG",
+      "images": [
+        "./assets/img/더미이미지 (1).JPG",
+        "./assets/img/더미이미지 (2).JPG",
+        "./assets/img/더미이미지 (3).JPG",
+        "./assets/img/더미이미지 (4).JPG"
+      ],
       "details": {
         "duration": "6개월",
         "scope": "기획, 설계, 제작, 설치, 운영 지원",
@@ -32,8 +65,13 @@
       "location": "평창올림픽 관련 시설",
       "client": "평창올림픽 조직위원회",
       "description": "장애인용 알파인 스키(모노스키)를 위한 시뮬레이터. 앉아서 타는 스키로 패럴림픽 종목입니다. 순간 중력을 느낄 수 있고 각도 30도까지 기울어지는 활동 반경을 가집니다.",
-      "thumbnail": "./assets/img/cases/case-002-thumb.jpg",
-      "images": [],
+      "thumbnail": "./assets/img/더미이미지 (1).JPG",
+      "images": [
+        "./assets/img/더미이미지 (1).JPG",
+        "./assets/img/더미이미지 (2).JPG",
+        "./assets/img/더미이미지 (3).JPG",
+        "./assets/img/더미이미지 (4).JPG"
+      ],
       "details": {
         "duration": "6개월",
         "scope": "기획, 설계, 제작, 설치",
@@ -56,8 +94,13 @@
       "location": "평창올림픽 관련 시설",
       "client": "평창올림픽 조직위원회",
       "description": "하강 각도 35도에 이르는 스키점프 시뮬레이터. 키넥트를 활용한 동작 센서로 사용자의 자세를 검출해 점수에 반영합니다. 100Kg을 견딜 수 있도록 4점식 안전벨트와 지지대를 특수 용접으로 보강했습니다.",
-      "thumbnail": "./assets/img/cases/case-003-thumb.jpg",
-      "images": [],
+      "thumbnail": "./assets/img/더미이미지 (1).JPG",
+      "images": [
+        "./assets/img/더미이미지 (1).JPG",
+        "./assets/img/더미이미지 (2).JPG",
+        "./assets/img/더미이미지 (3).JPG",
+        "./assets/img/더미이미지 (4).JPG"
+      ],
       "details": {
         "duration": "6개월",
         "scope": "기획, 설계, 제작, 설치",
@@ -80,8 +123,13 @@
       "location": "전국 체험관",
       "client": "다수 체험 시설",
       "description": "오큘러스 VR과 연동된 패러글라이딩 체험 시뮬레이터. 바람 효과와 함께 실제 패러글라이딩의 스릴을 체험할 수 있습니다.",
-      "thumbnail": "./assets/img/cases/case-004-thumb.jpg",
-      "images": [],
+      "thumbnail": "./assets/img/더미이미지 (1).JPG",
+      "images": [
+        "./assets/img/더미이미지 (1).JPG",
+        "./assets/img/더미이미지 (2).JPG",
+        "./assets/img/더미이미지 (3).JPG",
+        "./assets/img/더미이미지 (4).JPG"
+      ],
       "details": {
         "duration": "3개월",
         "scope": "설계, 제작, 설치",
@@ -104,8 +152,13 @@
       "location": "안전체험관",
       "client": "안전체험 시설",
       "description": "2인 1조 시스템으로 박스 형태의 부스에서 각종 안전체험을 하는 장치. 바람과 진동 효과가 있으며, 지진/화재/폭풍/교통안전 등 각종 체험시설과 연동이 가능합니다.",
-      "thumbnail": "./assets/img/cases/case-005-thumb.jpg",
-      "images": [],
+      "thumbnail": "./assets/img/더미이미지 (1).JPG",
+      "images": [
+        "./assets/img/더미이미지 (1).JPG",
+        "./assets/img/더미이미지 (2).JPG",
+        "./assets/img/더미이미지 (3).JPG",
+        "./assets/img/더미이미지 (4).JPG"
+      ],
       "details": {
         "duration": "3개월",
         "scope": "설계, 제작, 설치",
@@ -128,8 +181,13 @@
       "location": "체험관",
       "client": "체험 시설",
       "description": "1조 4인, 2세트로 구성되어 무선 HMD를 착용하고 체험. 3자유도 구조로 배를 타고 출렁이는 듯한 모션을 구현. 8+8개의 무선 HMD 디바이스를 외부 통합 제어 시스템에서 동시 제어합니다.",
-      "thumbnail": "./assets/img/cases/case-006-thumb.jpg",
-      "images": [],
+      "thumbnail": "./assets/img/더미이미지 (1).JPG",
+      "images": [
+        "./assets/img/더미이미지 (1).JPG",
+        "./assets/img/더미이미지 (2).JPG",
+        "./assets/img/더미이미지 (3).JPG",
+        "./assets/img/더미이미지 (4).JPG"
+      ],
       "details": {
         "duration": "4개월",
         "scope": "설계, 제작, 설치",
@@ -152,8 +210,13 @@
       "location": "경기도 해양안전체험관",
       "client": "경기도",
       "description": "단체 안전교육용 시뮬레이터. 바다 위 선박의 흔들림과 비상 발생 시 대처 요령을 교육합니다. 경광등, 음향, 번개, 물, 바람 등의 특수효과로 실감나는 체험을 제공합니다.",
-      "thumbnail": "./assets/img/cases/case-007-thumb.jpg",
-      "images": [],
+      "thumbnail": "./assets/img/더미이미지 (1).JPG",
+      "images": [
+        "./assets/img/더미이미지 (1).JPG",
+        "./assets/img/더미이미지 (2).JPG",
+        "./assets/img/더미이미지 (3).JPG",
+        "./assets/img/더미이미지 (4).JPG"
+      ],
       "details": {
         "duration": "5개월",
         "scope": "기획, 설계, 제작, 설치",
@@ -176,8 +239,13 @@
       "location": "양주 안전체험관",
       "client": "양주시",
       "description": "단체 안전교육용 시뮬레이터. 경기도 해양안전체험관과 같은 훈련 시스템이며, 구조에서 상부만 움직이는 방식입니다.",
-      "thumbnail": "./assets/img/cases/case-008-thumb.jpg",
-      "images": [],
+      "thumbnail": "./assets/img/더미이미지 (1).JPG",
+      "images": [
+        "./assets/img/더미이미지 (1).JPG",
+        "./assets/img/더미이미지 (2).JPG",
+        "./assets/img/더미이미지 (3).JPG",
+        "./assets/img/더미이미지 (4).JPG"
+      ],
       "details": {
         "duration": "4개월",
         "scope": "설계, 제작, 설치",
@@ -199,8 +267,13 @@
       "location": "대구교육 해양수련원",
       "client": "대구광역시 교육청",
       "description": "단체 안전교육용 시뮬레이터. 1단계에서 8단계까지의 지진 강도를 구현합니다. 특히 민방위 교육용으로 많이 사용됩니다.",
-      "thumbnail": "./assets/img/cases/case-009-thumb.jpg",
-      "images": [],
+      "thumbnail": "./assets/img/더미이미지 (1).JPG",
+      "images": [
+        "./assets/img/더미이미지 (1).JPG",
+        "./assets/img/더미이미지 (2).JPG",
+        "./assets/img/더미이미지 (3).JPG",
+        "./assets/img/더미이미지 (4).JPG"
+      ],
       "details": {
         "duration": "3개월",
         "scope": "설계, 제작, 설치",
@@ -223,8 +296,13 @@
       "location": "안전체험관",
       "client": "안전체험 시설",
       "description": "단체 안전교육용 시뮬레이터. 자동차 사고 발생 시 경험할 수 있는 상황을 체험합니다. 자동차 전복에서 탈출 요령 및 위기 상황 대처 요령 훈련이 목적입니다.",
-      "thumbnail": "./assets/img/cases/case-010-thumb.jpg",
-      "images": [],
+      "thumbnail": "./assets/img/더미이미지 (1).JPG",
+      "images": [
+        "./assets/img/더미이미지 (1).JPG",
+        "./assets/img/더미이미지 (2).JPG",
+        "./assets/img/더미이미지 (3).JPG",
+        "./assets/img/더미이미지 (4).JPG"
+      ],
       "details": {
         "duration": "3개월",
         "scope": "설계, 제작, 설치",
@@ -246,8 +324,13 @@
       "location": "안전체험관",
       "client": "안전체험 시설",
       "description": "단체 안전교육용 시뮬레이터. 1단계에서 5단계 풍속에 대한 시뮬레이션과 대피 요령 및 대피 동선을 훈련합니다. 훈련 사고 방지를 위한 비상 긴급 정지 기능이 있습니다.",
-      "thumbnail": "./assets/img/cases/case-011-thumb.jpg",
-      "images": [],
+      "thumbnail": "./assets/img/더미이미지 (1).JPG",
+      "images": [
+        "./assets/img/더미이미지 (1).JPG",
+        "./assets/img/더미이미지 (2).JPG",
+        "./assets/img/더미이미지 (3).JPG",
+        "./assets/img/더미이미지 (4).JPG"
+      ],
       "details": {
         "duration": "3개월",
         "scope": "설계, 제작, 설치",
@@ -269,8 +352,13 @@
       "location": "경기도 해양안전체험관",
       "client": "경기도",
       "description": "항공 안전체험과 이안류 체험 시뮬레이터. 해양 안전교육의 일환으로 항공기 비상 상황과 바다의 이안류 현상을 체험할 수 있습니다.",
-      "thumbnail": "./assets/img/cases/case-012-thumb.jpg",
-      "images": [],
+      "thumbnail": "./assets/img/더미이미지 (1).JPG",
+      "images": [
+        "./assets/img/더미이미지 (1).JPG",
+        "./assets/img/더미이미지 (2).JPG",
+        "./assets/img/더미이미지 (3).JPG",
+        "./assets/img/더미이미지 (4).JPG"
+      ],
       "details": {
         "duration": "4개월",
         "scope": "기획, 설계, 제작, 설치",
@@ -292,8 +380,13 @@
       "location": "경주 안전체험관",
       "client": "경주시",
       "description": "지진체험, 소방체험, 풍수해체험, 자동차전복체험, 버스안전벨트체험, 선박안전체험, 완강기체험 등 7가지 안전체험 시뮬레이터를 통합 운영하는 종합 안전체험 시스템입니다.",
-      "thumbnail": "./assets/img/cases/case-013-thumb.jpg",
-      "images": [],
+      "thumbnail": "./assets/img/더미이미지 (1).JPG",
+      "images": [
+        "./assets/img/더미이미지 (1).JPG",
+        "./assets/img/더미이미지 (2).JPG",
+        "./assets/img/더미이미지 (3).JPG",
+        "./assets/img/더미이미지 (4).JPG"
+      ],
       "details": {
         "duration": "8개월",
         "scope": "기획, 설계, 제작, 설치, 통합 운영 시스템",
@@ -318,8 +411,13 @@
       "location": "경주 안전체험관",
       "client": "경주시",
       "description": "화재 진압 및 비상 탈출 훈련을 위한 실감형 안전체험 시뮬레이터. 실제 화재 상황을 재현하여 소화기 사용법과 대피 요령을 체험할 수 있습니다.",
-      "thumbnail": "./assets/img/cases/case-014-thumb.jpg",
-      "images": [],
+      "thumbnail": "./assets/img/더미이미지 (1).JPG",
+      "images": [
+        "./assets/img/더미이미지 (1).JPG",
+        "./assets/img/더미이미지 (2).JPG",
+        "./assets/img/더미이미지 (3).JPG",
+        "./assets/img/더미이미지 (4).JPG"
+      ],
       "details": {
         "duration": "4개월",
         "scope": "설계, 제작, 설치",
