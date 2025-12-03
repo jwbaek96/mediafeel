@@ -81,7 +81,10 @@ export async function renderCasesPage() {
         let filteredCases = window.casesData;
         
         if (window.currentFilters.category !== 'all') {
-            filteredCases = filteredCases.filter(c => c.category === window.currentFilters.category);
+            filteredCases = filteredCases.filter(c => {
+                const categories = Array.isArray(c.category) ? c.category : [c.category];
+                return categories.includes(window.currentFilters.category);
+            });
         }
         
         if (window.currentFilters.year !== 'all') {
@@ -149,11 +152,17 @@ function getCategoryName(category) {
     const names = {
         '3d': '3D',
         '4d': '4D',
-        'vr-ar': 'VR/AR',
+        'vr-simulator': 'VR Simulator',
+        'experience-simulator': 'Experience Simulator',
         'interactive': 'Interactive',
         'motion-simulator': 'Motion Simulator',
         'motion-controller': 'Motion Controller'
     };
+    
+    if (Array.isArray(category)) {
+        return category.map(cat => names[cat] || cat).join(', ');
+    }
+    
     return names[category] || category;
 }
 

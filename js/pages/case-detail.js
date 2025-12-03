@@ -139,9 +139,49 @@ export async function renderCaseDetailPage(params) {
                 </div>
             </div>
         </div>
+        
+        <!-- Image Lightbox Modal -->
+        <div id="imageLightbox" class="lightbox" style="display: none;">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-content" id="lightboxImg" />
+        </div>
     `;
     
     render(html);
+    
+    // Image lightbox handler
+    const lightbox = document.getElementById('imageLightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxClose = document.querySelector('.lightbox-close');
+    
+    // Main image click to open lightbox
+    const galleryMain = document.getElementById('galleryMain');
+    if (galleryMain) {
+        const mainImg = galleryMain.querySelector('img');
+        if (mainImg) {
+            mainImg.style.cursor = 'pointer';
+            mainImg.addEventListener('click', () => {
+                lightbox.style.display = 'flex';
+                lightboxImg.src = mainImg.src;
+            });
+        }
+    }
+    
+    // Close lightbox
+    if (lightboxClose) {
+        lightboxClose.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+    }
+    
+    // Close lightbox on background click
+    if (lightbox) {
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+    }
     
     // Gallery thumbnail click handler
     if (caseItem.images?.length > 1) {
@@ -165,17 +205,23 @@ export async function renderCaseDetailPage(params) {
 }
 
 function getCategoryIcon(category) {
-    return getIcon(category, 80);
+    const cat = Array.isArray(category) ? category[0] : category;
+    return getIcon(cat, 80);
 }
 
 function getCategoryName(category) {
     const names = {
         '3d': '3D',
         '4d': '4D',
-        'vr-ar': 'VR/AR',
+        'vr-simulator': 'VR Simulator',
         'interactive': 'Interactive',
         'motion-simulator': 'Motion Simulator',
         'motion-controller': 'Motion Controller'
     };
+    
+    if (Array.isArray(category)) {
+        return category.map(cat => names[cat] || cat).join(', ');
+    }
+    
     return names[category] || category;
 }
