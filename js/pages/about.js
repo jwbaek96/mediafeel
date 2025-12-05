@@ -128,7 +128,7 @@ export async function renderAboutPage() {
         <div id="aboutPdfModal" class="modal" onclick="closeAboutPdfModal()">
             <div class="modal-content" style="max-width: 500px;" onclick="event.stopPropagation()">
                 <button class="modal-close" onclick="closeAboutPdfModal()">&times;</button>
-                <div style="text-align: center; padding: var(--spacing-xl);">
+                <div style="text-align: center; padding: var(--spacing-xs);">
                     <div class="pdf-icon" style="margin: 0 auto var(--spacing-lg);">${getIcon('document', 48)}</div>
                     <h2 style="margin-bottom: var(--spacing-md);">회사소개서 다운로드</h2>
                     <p style="color: var(--color-text-secondary); margin-bottom: var(--spacing-xl);">

@@ -694,41 +694,67 @@
     .hero-title {
         font-size: 2rem;
     }
-
+    
     .hero-video {
         min-width: 100%;
         min-height: 100%;
     }
-
+    
     .timeline::before {
         left: 20px;
         display: none;
     }
-
+    
     .timeline-item.left,
     .timeline-item.right {
         flex-direction: column;
         justify-content: flex-start;
         /* padding-left: 50px; */
     }
-
+    
     .timeline-year {
         width: auto;
         /* position: absolute; */
         left: 0;
     }
-
+    
     .timeline-year::after {
         left: 10px !important;
         right: auto !important;
     }
-
+    
     .timeline-content {
         margin: 0;
         max-width: 100%;
     }
-
+    
     .solutions-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 425px) {
+    .hero-subtitle {
+        font-size: 1.1rem;
+        line-height: 1.25;
+    }
+    .hero-actions{
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+    #aboutPdfModal .modal-content {
+            padding: var(--spacing-xl) 5px !important;
+    }
+    #aboutPdfModal .modal-content div{
+            padding: 0px !important;
+    }
+    .pdf-download-section{
+        padding: 0;
+        background-color: transparent;
+    }
+    .pdf-download-section h3 {display: none;}
+    .case-meta{
+        flex-direction: column;
+        gap: var(--spacing-xs);
     }
 }
