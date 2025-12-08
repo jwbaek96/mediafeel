@@ -134,7 +134,7 @@ export async function renderAboutPage() {
                     <p style="color: var(--color-text-secondary); margin-bottom: var(--spacing-xl);">
                         미디어필의 비전, 핵심 기술, 주요 프로젝트를 담은 종합 소개서
                     </p>
-                    <a href="assets/pdf/company-brochure.pdf" download class="btn btn-primary btn-large">
+                    <a href="assets/pdf/(주)미디어즘 회사 소개서.pdf" download class="btn btn-primary btn-large">
                         ${getIcon('download', 24)} PDF 다운로드
                     </a>
                 </div>

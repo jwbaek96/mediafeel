@@ -731,6 +731,11 @@
     .solutions-grid {
         grid-template-columns: 1fr;
     }
+    .pdf-download-section{
+        padding: 0;
+        background-color: transparent;
+    }
+    .pdf-download-section h3 {display: none;}
 }
 
 @media (max-width: 425px) {
@@ -748,11 +753,6 @@
     #aboutPdfModal .modal-content div{
             padding: 0px !important;
     }
-    .pdf-download-section{
-        padding: 0;
-        background-color: transparent;
-    }
-    .pdf-download-section h3 {display: none;}
     .case-meta{
         flex-direction: column;
         gap: var(--spacing-xs);
