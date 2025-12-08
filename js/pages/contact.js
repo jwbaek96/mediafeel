@@ -69,7 +69,7 @@ export async function renderContactPage() {
                         <div class="card download-card">
                             <h3>회사소개서 다운로드</h3>
                             <p>MEDIA FEEL의 자세한 정보를 확인하세요</p>
-                            <a href="./assets/pdf/brochure.pdf" class="btn btn-secondary" download>
+                            <a href="./assets/pdf/(주)미디어즘 회사 소개서.pdf" class="btn btn-secondary" download>
                                 <span class="btn-icon">${getIcon('download', 20)}</span>
                                 PDF 다운로드
                             </a>

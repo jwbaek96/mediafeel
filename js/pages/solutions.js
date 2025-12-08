@@ -30,7 +30,7 @@ export async function renderSolutionsPage() {
                             <div class="pdf-icon">${getIcon('document', 40)}</div>
                             <h4>4D 시스템 토탈 솔루션 소개서</h4>
                             <p>통합 4D 시스템 솔루션의 모든 것을 담은 종합 안내서</p>
-                            <a href="assets/pdf/4d-total-solution.pdf" download class="btn btn-outline btn-small">
+                            <a href="assets/pdf/4d-solution.pdf" download class="btn btn-outline btn-small">
                                 ${getIcon('download', 20)} PDF 다운로드
                             </a>
                         </div>
